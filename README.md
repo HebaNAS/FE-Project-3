@@ -1,6 +1,19 @@
-frontend-nanodegree-arcade-game
+Frontend Nanodegree P3
+
+Frogger - Arcade Game
 ===============================
 
-Students should use this rubric: https://www.udacity.com/course/viewer#!/c-ud015/l-3072058665/m-3072588797
+###Starting the Game
+Download the zip file and locate `index.html`.
 
-for self-checking their submission.
+Open `index.html` in a web browser.
+
+
+###How to play
+Move player across the stone path to the water without hitting any bugs.
+
+###Controls
+- **Up** - up arrow
+- **Down** - down arrow
+- **Left** - left arrow
+- **Right** - right arrow
