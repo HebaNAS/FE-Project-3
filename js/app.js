@@ -13,7 +13,7 @@ var Enemy = function() {
     this.height = 171;
     this.enemyLines = [60, 140, 220];  // Lines available for enemy (stone rows)
     this.reset();
-}
+};
 
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
@@ -26,7 +26,7 @@ Enemy.prototype.update = function(dt) {
   if (this.x > this.endPosition) {  // Check and/or reset enemy to start from end position
     this.reset();
   }
-}
+};
 
 // Choose random line to start movement
 Enemy.prototype.getRandomLine = function() {
@@ -37,12 +37,12 @@ Enemy.prototype.reset = function() {
   this.x = this.startPosition;
   this.y = this.getRandomLine();
   this.speed = Math.floor(Math.random() * 700);
-}
+};
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-}
+};
 
 
 
@@ -58,7 +58,7 @@ var Player = function() {
   this.leftMargin = -2;
   this.rightMargin = 402;
   this.score = 0;
-}
+};
 
 // This class requires an update(), render() and
 // a handleInput() method.
@@ -76,7 +76,7 @@ Player.prototype.checkCollisions = function() {
       }
     });
   }
-}
+};
 
 Player.prototype.update = function(dt) {
   document.getElementById('score').innerHTML = "Score: " + this.score;
@@ -84,11 +84,11 @@ Player.prototype.update = function(dt) {
     this.score += 1;
     this.reset();
   }
-}
+};
 
 Player.prototype.render = function () {
   ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-}
+};
 
 Player.prototype.handleInput = function(key) {
   if (key === 'up') {
@@ -116,12 +116,12 @@ Player.prototype.handleInput = function(key) {
       this.x -= 101;
     }
   }
-}
+};
 
 Player.prototype.reset = function() {
   this.x = 200;
   this.y = 380;
-}
+};
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
