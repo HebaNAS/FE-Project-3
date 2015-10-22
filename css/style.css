@@ -1,3 +1,8 @@
 body {
-    text-align: center;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+canvas {
+  margin: 0 auto;
 }
