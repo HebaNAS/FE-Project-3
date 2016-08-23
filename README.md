@@ -4,9 +4,7 @@ Frogger - Arcade Game
 ===============================
 
 ###Starting the Game
-Download the zip file and locate `index.html`.
-
-Open `index.html` in a web browser.
+Go to http://hebanas.github.io/FE-Project-3/
 
 
 ###How to play
