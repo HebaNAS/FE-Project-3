@@ -5,7 +5,7 @@ var Enemy = function() {
 
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
-    this.sprite = '../images/enemy-bug.png';
+    this.sprite = 'images/enemy-bug.png';
     this.speed = Math.random() * 500;
     this.startPosition = -102;
     this.endPosition = 607;
@@ -48,7 +48,7 @@ Enemy.prototype.render = function() {
 
 // Now write your own player class
 var Player = function() {
-  this.sprite = '../images/char-horn-girl.png';
+  this.sprite = 'images/char-horn-girl.png';
   this.x = 200;
   this.y = 380;
   this.width = 101;
